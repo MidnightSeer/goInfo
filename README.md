@@ -21,7 +21,7 @@ get freebsd information
   
 ## Install:
 ```sh
-  go get github.com/matishsiao/goInfo
+  go get github.com/midnightseer/goInfo
   go build
 ```
 
