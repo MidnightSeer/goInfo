@@ -24,6 +24,18 @@ func (gi *GoInfoObject) VarDump() {
 	fmt.Println("CPUs:", gi.CPUs)
 }
 
+func (gi *GoInfoObject) VarDumpStore() string {
+	var output string
+	output = fmt.Sprintf("GoOS:", gi.GoOS) + "\n"
+	output = output + fmt.Sprintf("Kernel:", gi.Kernel) + "\n"
+	output = output + fmt.Sprintf("Core:", gi.Core) + "\n"
+	output = output + fmt.Sprintf("Platform:", gi.Platform) + "\n"
+	output = output + fmt.Sprintf("OS:", gi.OS) + "\n"
+	output = output + fmt.Sprintf("Hostname:", gi.Hostname) + "\n"
+	output = output + fmt.Sprintf("CPUs:", gi.CPUs)
+	return output
+}
+
 func (gi *GoInfoObject) String() string {
 	return fmt.Sprintf("GoOS:%v,Kernel:%v,Core:%v,Platform:%v,OS:%v,Hostname:%v,CPUs:%v", gi.GoOS, gi.Kernel, gi.Core, gi.Platform, gi.OS, gi.Hostname, gi.CPUs)
 }
