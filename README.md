@@ -6,7 +6,7 @@
   
 ## Version:
 
-version:0.0.1
+version:0.0.2
 
 ## Futures
 
@@ -44,12 +44,12 @@ get freebsd information
    package main
 
    import (
-	   "github.com/matishsiao/goInfo"
+	   "github.com/midnightseer/goInfo"
    )
 
    func main() {
 		gi := goInfo.GetInfo()
-		gi.VarDump()
+		output := gi.VarDump()
 	 }
 }
 ```
