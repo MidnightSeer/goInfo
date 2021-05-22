@@ -26,7 +26,7 @@ func (gi *GoInfoObject) VarDump() {
 
 func (gi *GoInfoObject) VarDumpStore() string {
 	var output string
-	output = fmt.Sprintf("GoOS:", gi.GoOS) + "\n"
+	output = fmt.Sprintf("GoOS: %v", gi.GoOS) + "\n"
 	output = output + fmt.Sprintf("Kernel: %v", gi.Kernel) + "\n"
 	output = output + fmt.Sprintf("Core: %v", gi.Core) + "\n"
 	output = output + fmt.Sprintf("Platform: %v", gi.Platform) + "\n"
